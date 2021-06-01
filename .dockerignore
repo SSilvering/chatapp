@@ -1,0 +1,9 @@
+.env
+.git
+.gitignore
+.dockerignore
+Dockerfile
+nginx.conf
+docker-compose.yaml
+__pycache__/
+__pypackages__/
