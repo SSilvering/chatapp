@@ -9,7 +9,7 @@ pipeline {
     }
 
     tools {
-        terraform 'terraform'
+        // terraform 'terraform'
     }
 
     options {
