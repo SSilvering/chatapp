@@ -64,7 +64,7 @@ pipeline {
                     sh "docker push ${aws_registry}/${repository}:${NEW_TAG}"
                 }
                 
-                sh "git push --tags"
+                sh "git push -force --tags"
             }
         }
 
