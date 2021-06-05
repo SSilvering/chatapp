@@ -30,7 +30,7 @@ pipeline {
             steps{
                 echo 'Build docker image'
 
-                sh "docker build -t chat:${BUILD_NUMBER}"
+                sh "docker build -t chat:${BUILD_NUMBER} ."
             }
         }
 
