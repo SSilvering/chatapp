@@ -8,9 +8,9 @@ pipeline {
         aws_registry   = "403567978083.dkr.ecr.eu-central-1.amazonaws.com"
     }
 
-    tools {
-        // terraform 'terraform'
-    }
+    // tools {
+    //     terraform 'terraform'
+    // }
 
     options {
         timestamps()
