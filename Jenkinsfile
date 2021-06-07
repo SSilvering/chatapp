@@ -40,7 +40,7 @@ pipeline {
                 script {
                     sh "git fetch --tags || true"
                     cur_tag=(env.GIT_BRANCH - 'release/')
-                    HIGHEST = sh(script: "git describe --abbrev=0 --tags || true", returnStdout: true).trim()
+                    HIGHEST = sh(script: "git describe --tags `git rev-list --tags --max-count=1` || true", returnStdout: true).trim()
 
                     if (HIGHEST.isEmpty()) {                        
                         NEW_TAG=(env.GIT_BRANCH - 'release/'  + '.0')
