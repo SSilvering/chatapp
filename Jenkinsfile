@@ -34,6 +34,13 @@ pipeline {
             }
         }
 
+        stage('Unit Tests') {  
+            steps{
+                echo 'Unit Test'
+
+            }
+        }
+
         stage('Tagging') {
             when { branch 'release/*' } 
             steps {
